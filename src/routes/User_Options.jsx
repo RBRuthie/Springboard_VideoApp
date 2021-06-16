@@ -73,7 +73,7 @@ return token !== null ? (
               {/* <div className="banner-img" /> */}
               <img src={process.env.PUBLIC_URL + '/img/study_img.png'} alt="study image" className="profile-img" />
               <h1 className="name">STUDY</h1>
-              <p className="description">Improve concentration, memory, creativity, productivity, and focus with background music while studying.</p>
+              <p className="description">Enhance concentration, memory, creativity, productivity, and focus with background music while studying.</p>
               <button className="btn" id="study-btn">START</button>
           </Link>      
         </div>
@@ -117,7 +117,7 @@ return token !== null ? (
               {/* <div className="banner-img" /> */}
               <img src={process.env.PUBLIC_URL + '/img/chores_img.png'} alt="chores image" className="profile-img" />
               <h1 className="name">CHORES</h1>
-              <p className="description">Let music motivate &amp; assist in pushing harder through physical discomfort &amp; fatigue while exercising &amp; stretching</p>
+              <p className="description">Make chores	&amp; todo list fun and easier to complete by listening to music. Promise, you'll be done in a jiffy.</p>
               <button className="btn" id="chores-btn">START</button>
           </Link>
         </div>
