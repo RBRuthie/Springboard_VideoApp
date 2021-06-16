@@ -128,7 +128,7 @@ return token !== null ? (
           <Link to="/videos/workout mix" style={{ textDecoration: 'none', color: 'black' }}>
               {/* <div className="banner-img" /> */}
               <img src={process.env.PUBLIC_URL + '/img/stretch_img.png'} alt="exercise image" className="profile-img" />
-              <h1 className="name">EXERXISE</h1>
+              <h1 className="name">EXERCISE</h1>
               <p className="description">Let music motivate &amp; assist in pushing harder through physical discomfort &amp; fatigue while exercising &amp; stretching</p>
               <button className="btn" id="exercise-btn">START</button>
           </Link>
