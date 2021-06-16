@@ -117,7 +117,7 @@ return token !== null ? (
               {/* <div className="banner-img" /> */}
               <img src={process.env.PUBLIC_URL + '/img/chores_img.png'} alt="chores image" className="profile-img" />
               <h1 className="name">CHORES</h1>
-              <p className="description">Make chores	&amp; todo list fun and easier to complete by listening to music. Promise, you'll be done in a jiffy.</p>
+              <p className="description">Make chores &amp; todo list fun and easier to complete by listening to music. Promise, you'll be done in a jiffy.</p>
               <button className="btn" id="chores-btn">START</button>
           </Link>
         </div>
