@@ -84,7 +84,7 @@ return token !== null ? (
               {/* <div className="banner-img" /> */}
               <img src={process.env.PUBLIC_URL + '/img/relax_img.png'} alt="relax image" className="profile-img" />
               <h1 className="name">RELAX</h1>
-              <p className="description">Lack of sleep increases the risk of obesity &amp; heart disease. Self-care is key, these audio tracks will aid in sleep.</p>
+              <p className="description">Improve memory and decision making by listening to these audio-music tracks to de-stress, calm and clear the mind.</p>
               <button className="btn" id="relax-btn">START</button>
           </Link>
         </div>
