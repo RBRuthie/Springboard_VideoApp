@@ -1,0 +1,414 @@
+
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  min-height: 100vh;
+  width: 100%;
+  /* background:  #fff2ff; */
+  /* background: linear-gradient(to bottom, #fff0ff 0%, #ffffff 100%); */
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 2rem 2rem 0 0;
+}
+
+
+    /*************** 
+          BANNER
+    ************** */
+.navbar{
+  display: flex;
+  justify-content: flex-start;
+}
+ul{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 30px 0 30px 50px;
+}
+.fa, .fas{
+  font-size: 4.5em;
+  padding: 0 0 6px 0;
+  color: #000 !important;
+}
+.daily-quote-icon{
+  width: 28%;
+  height: auto;
+  padding: 0 0 0 24px;
+}
+
+
+/**************************
+           IFRAME
+************************** */
+
+
+.iframe-container  {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin: 34px 0px 0 90px; 
+   /* margin: -637px 60px 0 800px; */
+}
+
+
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 65%;
+  /* margin: 0 0 0px 120px; */
+
+}
+
+
+
+
+
+/**************************
+        THUMBNAILS
+************************** */
+
+
+.main-div{
+float: right;
+margin: 0px 120px 0 0px;
+}
+
+.section {
+max-width: 1100px;
+margin: auto;
+overflow: hidden;
+}
+
+.tile-div{
+position: relative;
+display: flex;
+justify-self: self-end;
+justify-content: center;
+background-color: rgb(253, 251, 251);
+width: 420px;
+height: 100px;
+padding: 20px;
+border-radius: 25px;
+border: 1px none rgb(158, 4, 163);
+margin: 5px 5px 20px 0px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card_image {
+width: 99px;
+height: 92px;
+margin: -15px 30px 0 -12px;
+border-radius: 25px;
+}
+
+.tile-div h2{
+font-size: 16px;
+margin: -15px 0 0 0;
+}
+
+
+
+
+
+/********************************************************* 
+                           QUOTE
+**********************************************************/
+
+
+.my_quote{
+margin: 0 0 0 -251px;
+}
+
+.contentBox{
+width: 100%;
+height: auto;
+margin: -20px 0 0 0;
+}
+
+.blockquote{
+display: block;
+background: #fff;
+/* padding: 15px 20px 20px 45px; */
+padding: 10px 37px 12px 30px;
+/* margin: 0 0 20px; */
+position: relative;
+
+/*Font*/
+font-family: Georgia, serif;
+font-size: 16px;
+line-height: 1.2;
+color: #666;
+text-align: justify;
+
+/*Borders - (Optional)*/
+border-left: 15px solid #070808;
+border-right: 5px solid #070808;
+border-top: 5px solid #070808;
+border-bottom: 5px solid #070808;
+
+/*Box Shadow - (Optional)*/
+-moz-box-shadow: 2px 2px 15px #ccc;
+-webkit-box-shadow: 2px 2px 15px #ccc;
+box-shadow: 2px 2px 15px #ccc;
+}
+
+
+.quotes{
+padding: 0px 50px 0 0;
+}
+
+h5{
+padding: 15px 0 0 0;
+}
+
+.close{
+display: flex;
+justify-content: flex-end;
+background-position: center;
+margin: -5px -8px 10px 0;
+cursor: pointer;
+border-radius: 50%;
+z-index: 10;
+text-shadow: 0 0 3px #e5eff4, 0 0 5px #141422;
+}
+
+
+
+/********************************    QUERIES   **********************************/
+
+@media only screen and (max-width: 1680px) and (min-width: 1440px){
+    .main-div{
+      float: right;
+      padding-bottom: 86.25%; 
+      margin: 0px 14px 0 0px;
+      /* margin: 34px 0 0 134px; */
+    }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1200px){
+  .main-div{
+    float: right;
+    margin: 0px 14px 0 0px;
+    }
+
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 58%;
+  }
+  
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 900px){
+
+  .iframe-container {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin: 15px 0 0 18px;
+    width: 57%;
+  } 
+  
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 614px;
+  }
+  .main-div{
+    float: right;
+    margin: 0px 14px 0 0px;
+  }
+  .tile-div{
+    width: 340px;
+  }
+  .card_image{
+    width: 90px;
+  }
+  .tile-div h2 {
+    font-size: 14px;
+   }
+} 
+
+
+@media only screen and (max-width: 899px) and (min-width: 660px){
+
+  .iframe-container {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin: 15px 0 0 18px;
+    width: 57%;
+  } 
+  
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 556px;
+  }
+    
+  .main-div{
+    float: right;
+    margin: 0px 7px 0 0px;
+  }
+  .tile-div{
+    width: 240px;
+    height: 90px;
+  }
+  .card_image{
+    width: 83px;
+    height: 80px;
+  }
+  .tile-div h2 {
+    font-size: 11px;
+   }
+   .card-description{
+    font-size: 11px;
+   }
+} 
+
+
+@media only screen and (max-width: 660px) and (min-width: 401px){
+
+  /* vidoes */
+  ul {
+    margin: 30px 0 30px 11px;
+  }
+
+  .daily-quote-icon {
+    width: 33%;
+    padding: 0 20px 0 0;
+  }
+
+  .fa, .fas {
+    font-size: 3.8em;
+    padding: 0 0 6px 11px;
+    color: #000 !important;
+  }
+
+  .contentBox {
+    margin: 0px 92px 0 14px;
+  }
+ 
+  .blockquote{
+    font-size: 14px;
+  }
+  
+  .iframe-container {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin: 15px 0 0 18px;
+    width: 157%;
+  } 
+  
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 58%;
+    height: 340px;
+  }
+
+  .main-div{
+    margin:  358px 0px 0 88px;
+    float: left;
+    flex-direction: row;
+    }
+  
+
+    .tile-div{
+      width: 80%;
+    }
+
+    .tile-div h2 {
+      font-size: 12px;
+      margin: -10px 0 0 0;
+    }
+}
+
+
+@media only screen and (max-width: 400px) and (min-width: 300px){
+
+  ul {
+    margin: 30px 0 30px 8px;
+  }
+
+  .daily-quote-icon {
+    width: 40%;
+    padding: 0 20px 0 0;
+  }
+
+  .fa, .fas {
+    font-size: 3.6em;
+    padding: 0 0 6px 11px;
+    color: #000 !important;
+  }
+
+  .contentBox {
+    margin: 0px 105px 0 17px;
+  }
+ 
+  .blockquote{
+    font-size: 12px;
+  }
+  
+  .iframe-container {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin: 15px 0 0 18px;
+    width: 157%;
+  } 
+  
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 58%;
+    height: 303px;
+  }
+
+  .main-div{
+    margin:  330px 0px 0 14px;
+    float: left;
+    flex-direction: row;
+    }
+  
+
+  .tile-div{
+    width: 85%;
+  }
+
+  .tile-div h2 {
+    font-size: 10px;
+    margin: -10px 0 0 0;
+  }
+
+  /*  videos = hold 3 componets: nav, iframe, tile  */
+  /*  mian-div  = contains videolist component */
+  /* section = div for both file container and img/title   */
+  /* tile-container = container for tiles  */
+ /*  title div = div for img * title  */
+
+}
+
+

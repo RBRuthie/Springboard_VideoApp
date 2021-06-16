@@ -1,0 +1,140 @@
+
+
+
+.my_navbar .navbar {
+  font-size: 1.2rem;
+  padding: 10px 20px 0px 17px;
+  /* background: #f1aee8; */
+}
+
+ .my_navbar .navbar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+} 
+
+ .my_navbar  .navbar .search{
+  margin: 0 42px 0 0;
+}
+
+.my_navbar  .navbar ul {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none; 
+  padding: 0;
+  margin: 0; 
+}
+
+.my_navbar .return-arrow{
+  width: 10%;
+  height: auto;
+}
+.my_navbar .daily-quote-icon{
+  width: 77%;
+  height: auto;
+}
+
+/*  creating the shape of the search box */
+.my_navbar .search{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 60px;
+  transition: 0.5s;
+  box-shadow: 0 0 0 5px #f03cab;
+  overflow: hidden;
+}
+
+.my_navbar .search.active{
+  width: 460px;
+}
+
+.my_navbar .search .icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 62px;
+  background: #fff;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+} */
+
+ .my_navbar .search .icon::before{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #080808;
+  border-radius: 50%;
+  transform: translate(-4px,-4px);
+}
+
+.my_navbar .search .icon::after{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background: #080808;
+  transform: translate(6px,6px) rotate(315deg);
+}
+
+.my_navbar .search .input{
+  position: relative;
+  width: 300px;
+  height: 60px;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my_navbar .search .input input{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 26px;
+  padding: 10px 14px;
+}
+
+.my_navbar .clear{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  right: 15px;
+  background: #ff0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+ 
+.my_navbar .clear::before{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: #999;
+  transform: rotate(45deg);
+}
+
+.my_navbar .clear::after{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: #999;
+  transform: rotate(315deg);
+}  
