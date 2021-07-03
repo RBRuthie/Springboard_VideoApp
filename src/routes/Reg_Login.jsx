@@ -158,11 +158,11 @@ const [invalidCredentials, setInvalidCredentials] = useState(false)
 
                         <h3>Sign In</h3>
 
-                        <input type="text" placeholder="Username" value={values.name} onChange={handleNameChange} />
+                        <input type="text" placeholder="ana" value={values.name} onChange={handleNameChange} />
                         {invalidFields.name && <span>Required</span>}
                         {invalidCredentials && <span className="invalid-credentials">Invalid credentials.</span>}
 
-                        <input type="password" placeholder="Password" autoComplete="on" value={values.password} onChange={handlePasswordChange} />
+                        <input type="password" placeholder="ana99" autoComplete="on" value={values.password} onChange={handlePasswordChange} />
                         {invalidFields.password && <span>Required</span>}
                         {invalidCredentials && <span className="invalid-credentials">Invalid Credentials</span>}
 
